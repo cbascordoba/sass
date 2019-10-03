@@ -17,8 +17,16 @@ table tr:hover {
   background-color: #dbd879; }
 
 section {
-  max-width: 1024px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   background-color: #bfbfbf;
   padding: 24px; }
+
+.max-width--huge {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+
+header {
+  background-color: #ea83ee; }
