@@ -23,7 +23,12 @@ $color-success: rgb(91,183,92);
 //Tipografia
 
 $basefont: 'Quicksand', sans-serif;
-$basefontize: 16px;
+$basefontsize: 16px;
 
 $buttoncolor: $color-white;
 $buttonbackgroundcolor: $color-brand;
+$buttonfontsize: $basefontsize*1.5;
+
+//Constantes
+
+$border-radius: 3px;
