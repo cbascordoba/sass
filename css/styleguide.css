@@ -1,13 +1,8 @@
 @charset "UTF-8";
-/*------------------------------------*\
-    $STYLE
-\*------------------------------------*/
-/**
- * Let's define the settings file here, or the partials to be included.
- * This way we can have different .css files compiled with different partials each.
+/* 
+ *Set all partials to exclude in Styleguide project 
  */
-/*------------------------------------*\
-    $PARTIALS
+/*------------------------------------*    $PARTIALS
 \*------------------------------------*/
 /**
  * All files to be compiled
@@ -15,23 +10,20 @@
 /**
 * Scss Libraries, mixins, functions and any Scss focused logic
 **/
-/*------------------------------------*\
-    $SETTINGS
+/*------------------------------------*    $SETTINGS
 \*------------------------------------*/
 /**
  *
  * Define all variables and values to use
  *
  */
-/*------------------------------------*\
-    $INCLUDED-COMPONENTS
+/*------------------------------------*    $INCLUDED-COMPONENTS
 \*------------------------------------*/
 /**
  * We can tell the components to use here, `true` for used, `false` unused.
  * Remember you can overwrite this value anywhere else by removing the `!default` property
  */
-/*------------------------------------*\
-    $BREAKPOINTS
+/*------------------------------------*    $BREAKPOINTS
 \*------------------------------------*/
 /**
  * "Start with the small screen first, then expand until it looks like shit. Time to insert a breakpoint!"
@@ -45,8 +37,7 @@
 }
  *
  */
-/*------------------------------------*\
-    $Z-INDEX
+/*------------------------------------*    $Z-INDEX
 \*------------------------------------*/
 /**
  * We can have control over z-index and not ending up having 900 to infinite.
@@ -56,8 +47,7 @@
  }
  *
  */
-/*------------------------------------*\
-    $DIR
+/*------------------------------------*    $DIR
 \*------------------------------------*/
 /**
  * Sometimes we change image dir from develop to production:
@@ -65,21 +55,18 @@
 /*
   * In case we use local fonts (I use them fewer and fewer lately)
   */
-/*------------------------------------*\
-    $LAYOUT
+/*------------------------------------*    $LAYOUT
 \*------------------------------------*/
 /**
  * Constant layout values, apart from these we can also declare values
  * for different blocks sizes and more.
  */
-/*------------------------------------*\
-    $GRID
+/*------------------------------------*    $GRID
 \*------------------------------------*/
 /**
  * These are the variables we use for our Grid
  */
-/*------------------------------------*\
-    $FONT-FACE
+/*------------------------------------*    $FONT-FACE
 \*------------------------------------*/
 /**
  * Fonts definitions
@@ -97,8 +84,7 @@
 
  *
  */
-/*------------------------------------*\
-    $COLORS
+/*------------------------------------*    $COLORS
 \*------------------------------------*/
 /**
  * Brand colors
@@ -107,14 +93,12 @@
     * Grey Scale
     * This is mainly to hold back designers from adding 200 different greys ;)
     */
-/*------------------------------------*\
-    $TEXTURAS
+/*------------------------------------*    $TEXTURAS
 \*------------------------------------*/
 /**
  * Definimos Colores y elementos de popups, mensajes de alerta, etc...
  */
-/*------------------------------------*\
-    $MIXINS
+/*------------------------------------*    $MIXINS
 \*------------------------------------*/
 /*
 * Fácil de usar: las variables a usar están en settings.scss y son:
@@ -135,8 +119,7 @@
 /**
   * Centrar y dar un ancho máximo igual a $pagemaxwidth.
   */
-/*------------------------------------*\
-    $FUNCIONES
+/*------------------------------------*    $FUNCIONES
 \*------------------------------------*/
 /*
  * Función para controlar el index
@@ -159,8 +142,7 @@
 /**
 * Base
 **/
-/*------------------------------------*\
-    $CONTENIDO
+/*------------------------------------*    $CONTENIDO
 \*------------------------------------*/
 /**
  * Contenido..................... Esto que lees
@@ -199,8 +181,7 @@
 
  * Patron........................ Estilos para la guía de patrones
  */
-/*------------------------------------*\
-    $RESET
+/*------------------------------------*    $RESET
 \*------------------------------------*/
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, main, menu, nav, section, time, mark, audio, video {
   margin: 0;
@@ -241,8 +222,7 @@ img {
 /**
 * HTML elements
 **/
-/*------------------------------------*\
-    $ELEMENTOS-FIGURE
+/*------------------------------------*    $ELEMENTOS-FIGURE
 \*------------------------------------*/
 figure {
   margin-bottom: 1.5; }
@@ -255,8 +235,7 @@ figure {
     font-style: italic;
     color: #737373; }
 
-/*------------------------------------*\
-    $FORMULARIOS
+/*------------------------------------*    $FORMULARIOS
 \*------------------------------------*/
 form {
   margin: 0 0 1.5 0; }
@@ -444,8 +423,7 @@ input:required:focus:valid {
   background-color: #e9f5e9;
   border: 1px solid #5bb75b; }
 
-/*------------------------------------*\
-    $BOTONES
+/*------------------------------------*    $BOTONES
 \*------------------------------------*/
 /*
  * Definimos los botones y sus variantes
@@ -490,8 +468,7 @@ input:required:focus:valid {
   .btn--disabled:visited, .btn--info:visited, .btn--error:visited, .btn--warning:visited, .btn--success:visited, .btn--primary:visited {
     color: white; }
 
-/*------------------------------------*\
-    $BOTONES-VARIANTES
+/*------------------------------------*    $BOTONES-VARIANTES
 \*------------------------------------*/
 /**
  * Variantes de los botones: color para dar sensaciones.
@@ -559,8 +536,7 @@ input[type="submit"].btn:hover {
 .btn--primary {
   background-color: #ea83ee; }
 
-/*------------------------------------*\
-    $BOTONES-TAMAÑOS
+/*------------------------------------*    $BOTONES-TAMAÑOS
 \*------------------------------------*/
 /**
  * Variantes de los botones por tamaño.
@@ -584,8 +560,7 @@ input[type="submit"].btn:hover {
   line-height: 3;
   font-size: 1.5rem; }
 
-/*------------------------------------*\
-    $BOTONES-GRUPOS
+/*------------------------------------*    $BOTONES-GRUPOS
 \*------------------------------------*/
 /**
  * Con esta clase podemos agrupar los botones
@@ -633,8 +608,7 @@ input[type="submit"].btn:hover {
       -moz-background-clip: padding;
       background-clip: padding-box; }
 
-/*------------------------------------*\
-    $IMÁGENES
+/*------------------------------------*    $IMÁGENES
 \*------------------------------------*/
 .img--rounded {
   border-radius: 20px; }
@@ -649,8 +623,7 @@ input[type="submit"].btn:hover {
 .img--circle {
   border-radius: 100%; }
 
-/*------------------------------------*\
-    $LINKS
+/*------------------------------------*    $LINKS
 \*------------------------------------*/
 a {
   text-decoration: none;
@@ -666,8 +639,7 @@ a {
   a:hover, a:active {
     outline: 0; }
 
-/*------------------------------------*\
-    $TIPOGRAFÍA
+/*------------------------------------*    $TIPOGRAFÍA
 \*------------------------------------*/
 h1,
 h2,
@@ -870,8 +842,7 @@ hr {
 .font-huge {
   font-size: 2rem; }
 
-/*------------------------------------*\
-    $TABLAS
+/*------------------------------------*    $TABLAS
 \*------------------------------------*/
 table {
   width: 100%;
@@ -934,8 +905,7 @@ table {
 /**
 * Layout and general styles
 **/
-/*------------------------------------*\
-    $SITIO
+/*------------------------------------*    $SITIO
 \*------------------------------------*/
 @-webkit-viewport {
   width: device-width; }
@@ -973,10 +943,9 @@ body {
 * A partir de aquí es donde debes escribir los estilos de posicionamiento
 * y detalles que forman tu web. Disfruta!
 */
-/*------------------------------------*\
-    $TEXTURAS
+/*------------------------------------*    $TEXTURAS
 \*------------------------------------*/
-.alert--success, .alert--warning, .alert--error, .alert--info, .alert--block {
+.alert--success, .alert--warning, .alert--error, .alert--info, .alert--block, .alert--myawesomealert {
   margin-bottom: 1.5;
   padding: 8px 35px 8px 14px;
   background-color: #fce4cf;
@@ -986,9 +955,9 @@ body {
   color: #904809;
   border-radius: 5px;
   position: relative; }
-  .alert--success .alert--heading, .alert--warning .alert--heading, .alert--error .alert--heading, .alert--info .alert--heading, .alert--block .alert--heading {
+  .alert--success .alert--heading, .alert--warning .alert--heading, .alert--error .alert--heading, .alert--info .alert--heading, .alert--block .alert--heading, .alert--myawesomealert .alert--heading {
     color: inherit; }
-  .alert--success .close, .alert--warning .close, .alert--error .close, .alert--info .close, .alert--block .close {
+  .alert--success .close, .alert--warning .close, .alert--error .close, .alert--info .close, .alert--block .close, .alert--myawesomealert .close {
     position: absolute;
     top: -2px;
     right: 2px;
@@ -1084,8 +1053,7 @@ body {
 /**
 * Componets used for layouts, headers, articles, etc...
 **/
-/*------------------------------------*\
-    $grid
+/*------------------------------------*    $grid
 \*------------------------------------*/
 * {
   -webkit-box-sizing: border-box;
@@ -1220,8 +1188,7 @@ body {
       -ms-flex: 0 0 calc(100% - 12px);
       flex: 0 0 calc(100% - 12px); } }
 
-/*------------------------------------*\
-    $UTILITIES
+/*------------------------------------*    $UTILITIES
 \*------------------------------------*/
 /*
 *
@@ -1269,8 +1236,7 @@ body {
 .margin-bottom {
   margin-bottom: 1.5; }
 
-/*------------------------------------*\
-    $PLACEHOLDERS
+/*------------------------------------*    $PLACEHOLDERS
 \*------------------------------------*/
 /**
   * The ghost, nudged to maintain perfect centering
@@ -1300,7 +1266,383 @@ body {
   * Clear floats.
   * http://bit.ly/1e3YaBH
   */
-.btn-group:after {
+.btn-group:after, .block__body:after {
   content: "";
   display: table;
   clear: both; }
+
+.stcontainer {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 768px;
+  width: 100%;
+  background-color: white;
+  padding: 1.5 24px;
+  border: 1px solid #bfbfbf;
+  border-radius: 5px;
+  margin-bottom: 1.5; }
+
+.sttitle {
+  display: block;
+  border-bottom: 1px solid #bfbfbf;
+  margin-bottom: 3;
+  font-size: 0.6rem;
+  line-height: 2;
+  color: #737373; }
+
+.stcolor {
+  height: 100px;
+  position: relative;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 24px; }
+  .stcolor:before {
+    content: attr(data-color);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -25%);
+    -ms-transform: translate(-50%, -25%);
+    transform: translate(-50%, -25%);
+    font-size: 0.8rem;
+    width: 95%;
+    text-align: center; }
+
+.sttitlebag:before {
+  content: attr(data-header);
+  display: inline-block;
+  font-size: 0.6rem;
+  margin-right: 1em;
+  border: 1px solid #a6a6a6;
+  border-radius: 5px;
+  line-height: 1.6;
+  width: 1.6em;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  background-color: #bfbfbf;
+  color: #737373;
+  vertical-align: middle; }
+
+.basefont {
+  font-family: "Quicksand", sans-serif; }
+  .basefont:after {
+    content: " Quicksand, sans-serif"; }
+
+.altfont {
+  font-family: Georgia, Times, "Times New Roman"; }
+  .altfont:after {
+    content: " Georgia, Times, Times New Roman"; }
+
+.codefont {
+  font-family: "Courier New", monospace; }
+  .codefont:after {
+    content: " Courier New, monospace"; }
+
+[class^="grid--item-"], [class*=" grid--item-"] {
+  min-height: 100px; }
+
+.alert--myawesomealert {
+  background-color: hotpink;
+  color: firebrick; }
+
+.stfontblock {
+  display: inline-block;
+  border: 1px solid #bfbfbf;
+  border-radius: 5px;
+  line-height: 1;
+  padding: 12px 6px;
+  margin-right: .5em;
+  font-size: 2rem; }
+  .stfontblock span {
+    display: block;
+    text-align: center;
+    font-size: 1rem; }
+
+.sticons {
+  border: 1px solid #bfbfbf;
+  padding: .5em;
+  width: 180px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center; }
+  .sticons small {
+    display: block;
+    font-weight: bold; }
+
+/* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript */
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: black;
+  background: none;
+  text-shadow: 0 1px white;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  margin-bottom: 1.5em;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none; }
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+  text-shadow: none;
+  background: #b3d4fc; }
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+  text-shadow: none;
+  background: #b3d4fc; }
+
+@media print {
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none; } }
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0 1.5em;
+  overflow: auto; }
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #f5f2f0; }
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal; }
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: slategray; }
+
+.token.punctuation {
+  color: #999; }
+
+.namespace {
+  opacity: .7; }
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #905; }
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #690; }
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #a67f59;
+  background: rgba(255, 255, 255, 0.5); }
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #07a; }
+
+.token.function {
+  color: #DD4A68; }
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #e90; }
+
+.token.important,
+.token.bold {
+  font-weight: bold; }
+
+.token.italic {
+  font-style: italic; }
+
+.token.entity {
+  cursor: help; }
+
+/*------------------------------------*    $BLOCKS
+\*------------------------------------*/
+/*
+ * We add here differents blocks in the layout,
+ * like: small blocks, centered blocks, and so.
+
+
+    <div class="block">
+        <div class="block__title">
+
+        </div>
+        <div class="block__body">
+
+        </div>
+    </div>
+
+
+*/
+.block {
+  max-width: 100%;
+  margin-bottom: 24px;
+  background-color: white;
+  position: relative;
+  /* Block Title */
+  /* Block Info */
+  /* Block body */ }
+  .block--hasfooter {
+    padding-bottom: 4em; }
+  .block--collapse {
+    margin-bottom: 0; }
+  .block--highlight .block__title, .block--highlight .block__subtitle {
+    background-color: #ea83ee;
+    color: white; }
+  .block--bordertop {
+    border-top: 5px solid #ea83ee; }
+  .block__title, .block__subtitle {
+    width: 100%;
+    background-color: white;
+    padding: 12px 24px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #dbd879;
+    border-bottom: 1px solid #bfbfbf;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .block__title.center, .center.block__subtitle {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    .block__title p, .block__subtitle p {
+      margin: 0; }
+      .block__title p a, .block__subtitle p a {
+        font-weight: normal; }
+    .js-collapse .block__title, .js-collapse .block__subtitle {
+      border-bottom: none; }
+    .block__title--white {
+      border-bottom: 1px solid #bfbfbf;
+      background-color: white !important;
+      color: color-grey(lightgrey) !important; }
+    .block__title--center {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+  .block__subtitle {
+    border: none;
+    padding: 12px 48px; }
+    .block__subtitle.block__subtitle--white {
+      background-color: white;
+      color: color-grey(lightgrey); }
+  .block__info {
+    padding: 12px 48px;
+    margin-left: auto;
+    color: #dbd879;
+    background-color: white;
+    padding: 0 5px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    margin-top: 3px;
+    text-transform: none;
+    line-height: 1.5;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 5px; }
+    .block__info:hover, .block__info:visited {
+      text-decoration: none;
+      color: #dbd879; }
+    .block__info button {
+      margin-top: -4px; }
+    .block__info--group {
+      float: right;
+      padding: 3px 5px;
+      margin-left: 24px;
+      border-radius: 5px;
+      font-size: 0.8rem;
+      line-height: 1.5;
+      text-decoration: none;
+      display: inline-block; }
+      .block__info--group:hover, .block__info--group:visited {
+        text-decoration: none; }
+      .block__info--group .btn {
+        line-height: 1.8; }
+    .block__info--success {
+      color: #5bb75b; }
+    .block__info--warning {
+      color: #e78730; }
+    .block__info--error {
+      color: #da4f49; }
+    .block__info--info {
+      color: #42b8dd; }
+    .block__info.block__subtitle--white {
+      background-color: white;
+      color: color-grey(lightgrey); }
+  .block__body {
+    padding: 24px;
+    background-color: white;
+    position: relative; }
+    .block__body fieldset {
+      border: none; }
+    .block__body--smallpadding {
+      padding: 12px; }
+  .block__options .wrapper {
+    padding: 12px 24px; }
+  .block__options a:last-child {
+    margin-top: 24px; }
+  .block-bg {
+    max-width: 50%;
+    display: block;
+    margin: 0 auto; }
+  .block--whitebg {
+    border-top: 1px solid rgba(100, 100, 100, 0.1); }
+    .block--whitebg > .block__title, .block--whitebg > .block__subtitle {
+      border-bottom: 1px solid #bfbfbf;
+      background-color: white;
+      color: color-grey(lightgrey); }
+    .block--whitebg.block--highlight .block__title, .block--whitebg.block--highlight .block__subtitle {
+      background-color: #ea83ee;
+      color: white; }
+    .block--whitebg.block--bordertop {
+      border-top: 5px solid #ea83ee; }
+  .block__footer {
+    position: absolute;
+    bottom: 12px;
+    width: 100%;
+    padding: 6px; }
