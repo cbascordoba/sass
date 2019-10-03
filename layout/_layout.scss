@@ -2,6 +2,9 @@ section{
     @include max-width;
     background-color: $color-litegray;
     padding: $padding;
+    @include respond-to(800px){
+        background-color: red;
+    }
 }
 
 .max-width--huge{
